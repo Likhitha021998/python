@@ -1,0 +1,17 @@
+# Arithmetic operators
+x=6
+y=3
+print(x+y)
+
+# Logical operators
+c = True
+d = False
+print('c and d is',c and d)
+print('c or d is',c or d)
+print('not c is',not c)
+
+# Assignment operators
+num1 = 2
+num2 = 5
+print("Line 1 - Value of num1 :",num1)
+print("Line 2 - Value of num2 :",num2)
