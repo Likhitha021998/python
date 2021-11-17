@@ -15,3 +15,10 @@ num1 = 2
 num2 = 5
 print("Line 1 - Value of num1 :",num1)
 print("Line 2 - Value of num2 :",num2)
+output:
+9
+c and d is False
+c or d is True
+not c is False
+Line 1 - Value of num1 : 2
+Line 2 - Value of num2 : 5
