@@ -1,0 +1,36 @@
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+
+print("Enter the operator (+,-,/,*): ")
+ch = input()
+if ch=='+':
+    print("sum:", add(2,5))
+elif ch=='-':
+    print("substraction:", sub(2,5))
+elif ch=='*':
+    print("multiplication:", mul(2,5))
+elif ch=='/':
+    print("division:", div(10,5))
+ch = input()
+
+if ch=='+':
+    print("sum:", ad(2,5))
+elif ch=='-':
+    print("substraction:", mul(2,5))
+elif ch=='*':
+    print("multiplication:", mul(2.5))
+elif ch=='/':
+    print("division:", div(10,5))
+else:
+    print("Invalid operator")
+    
+    output:
+Enter the operator (+,-,/,*): 
++
+sum: 7
