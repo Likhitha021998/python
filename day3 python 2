@@ -1,0 +1,12 @@
+n = int(input("Enter a number:"))
+fact = 1
+while(n>0):
+    fact=fact*n
+    n=n-1
+print("Factorial of the number is:")
+print(fact)
+
+output:
+Enter a number:6
+Factorial of the number is:
+720
