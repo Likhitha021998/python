@@ -1,0 +1,32 @@
+# area of a triangle
+
+a = float(input("Enter the length of first side:"))
+b = float(input("Enter the length of second side:"))
+c = float(input("Enter the length of third side:"))
+s = (a+b+c)/2
+area = (s*(s-a)*(s-b)*(s-c))**0.5
+print("the area of the triangle is %0.2f" % area)
+
+# area of a square
+
+side = int(input("Enter the side:"))
+area = side*side
+print("area of the square="+str(area))
+
+# area of a rectangle
+l = float(input("Enter the length of a rectangle:"))
+b = float(input("Enter the breadth of a rectangle:"))
+area = l*b
+print("Area of a rectangle is: %.2f" %area)
+
+output:
+Enter the length of first side:4
+Enter the length of second side:6
+Enter the length of third side:7
+the area of the triangle is 11.98
+Enter the side:6
+area of the square=36
+Enter the length of a rectangle:10
+Enter the breadth of a rectangle:8
+Area of a rectangle is: 80.00
+
