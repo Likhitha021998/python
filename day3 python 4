@@ -1,0 +1,74 @@
+# multiple inheritance
+
+class class1:
+    def m(self):
+        print("In class1")
+class class2(class1)  :
+    def m(self):
+        print("In class2")
+class class3(class1):
+    def m(self):
+        print("In class3")
+class class4(class2 , class3):
+    def m(self):
+        print("In class4")
+        class2.m(self)
+        class3.m(self)
+        class1.m(self)
+obj = class4()
+obj.m()
+
+output:
+In class4
+In class2
+In class3
+In class1
+
+
+# multi-level inheritance
+
+class student:
+    def getStudent(self):
+        self.name = input("Name:")
+        self.age = input("Age:")
+        self.gender = input("Gender:")
+
+class test(student):
+    def getMarks(self):
+        self.stuClass = input("Class:")
+        print("Enter the marks of the respective subjects")
+        self.literature = int(input("Literature:"))
+        self.math = int(input("Math:"))
+        self.biology = int(input("Biology:"))
+        self.physics = int(input("Physics:"))
+
+class marks(test):
+    def display(self):
+        print("\n\nName:",self.name)
+        print("Age:",self.age)
+        print("Gender:",self.gender)
+        print("Study in:",self.stuClass)
+        print("Total Marks:",self.literature+self.math+self.biology+self.physics)
+m1 = marks()
+m1.getStudent()
+m1.getMarks()
+m1.display()
+
+output:
+Name: Rakshitha
+Age: 14
+Gender: Female
+Class: 9th
+Enter the marks of the respective subjects
+Literature: 78
+Math:80
+Biology:92
+Physics:79
+
+
+Name:  Rakshitha
+Age:  14
+Gender:  Female
+Study in:  9th
+Total Marks: 329
+
