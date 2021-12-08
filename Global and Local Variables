@@ -1,0 +1,35 @@
+# defining inside a function for local variable(inside a function)
+
+def fun1():
+    msg="hello likhitha"
+    a=23
+    b=80
+    print(msg,a,b)
+fun1()
+
+# defining global variable(outside a function)
+def call(*args):
+    sum=0
+    for i in args:
+        sum=sum+i
+        print("sum is:", sum)
+sum=0
+call(2,3,4)
+print("sum value outsidde the function")
+
+#built in function
+# abs
+a=abs(-2)
+print(a)
+
+# summmation of binary
+# bin
+
+b=bin(10)
+print(b)
+
+
+
+
+
+
