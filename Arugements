@@ -1,0 +1,21 @@
+# variable length arguements(*args)
+
+def fun3(*name):
+    print("type of passed arguements is \n", type(name))
+    print("passed arguements rae:")
+    for i in name:
+        print(i)
+fun3("pavan","sudhavana","priya","sandhya")
+
+# keyword arguements(*kwarg) 1
+
+def fun4(name,msg):
+    print("printing the text with",name,"and",msg)
+fun4(name="likhi",msg="how are you")
+
+# 2
+
+def fun5(**fname):
+     print(fname)
+fun5(b="banana")
+fun5(fun5="mango",fun5="orange")
